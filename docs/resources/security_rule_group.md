@@ -152,7 +152,7 @@ resource "panos_zone" "eng" {
 
 ### Panorama Example
 
-```
+```hcl
 resource "panos_security_rule_group" "example1" {
     position_keyword = "above"
     position_reference = panos_security_rule_group.example2.rule.0.name
